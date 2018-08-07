@@ -14,11 +14,11 @@ const portfinder = require('portfinder')
 // mock数据
 const express = require('express')
 const app = express()
-var appData = require('../data.json')
-var seller = appData.seller
-var goods = appData.goods
-var ratings = appData.ratings
-var apiRoutes = express.Router()
+const appData = require('../data.json')
+const seller = appData.seller
+const goods = appData.goods
+const ratings = appData.ratings
+const apiRoutes = express.Router()
 app.use('/api', apiRoutes)
 
 

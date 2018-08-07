@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import HomeHeader from './components/header/header'
+import HomeHeader from '@/components/header/header'
 
 // 将ajax请求的返回状态码抽取出来，方便查阅和维护
 const ERR_OK = 0
@@ -63,6 +63,7 @@ export default {
       display: block
       font-size: 14px
       color: rgb(77, 85, 93)
+      // 这个 active 类名是在 router/index.js 下更名的
       &.active
         color: rgb(240, 20, 20)
 </style>
