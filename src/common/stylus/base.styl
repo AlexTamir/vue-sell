@@ -4,7 +4,8 @@ body, html
   font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif
 
 .clearfix
-  // display: inline-block
+  // 是为了形成 BFC，创建了BFC的元素和它的子元素的 margin 不会折叠
+  display: inline-block
   &::after
     content: ' '
     display: block

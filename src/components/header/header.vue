@@ -157,8 +157,8 @@ export default {
           &.special
             bg-image('special_1')
         .text
-          // 14
-          line-height: 12px
+          // 12
+          line-height: 13px
           font-size: 10px
     .supports-count
       position: absolute
@@ -166,8 +166,8 @@ export default {
       bottom: 14px
       padding: 0 8px
       height: 24px
-      // 26
-      line-height: 24px
+      // 24
+      line-height: 25px
       border-radius: 14px
       background-color: rgba(0, 0, 0, .2)
       text-align center
@@ -192,7 +192,7 @@ export default {
       vertical-align: top
       width: 22px
       height: 12px
-      // 7
+      // 8
       margin-top: 8px
       bg-image('bulletin')
       background-size: 22px 12px
@@ -203,8 +203,8 @@ export default {
       font-size: 10px
     .icon-keyboard_arrow_right
       position: absolute
-      // 9
-      top: 8px
+      // 8
+      top: 9px
       right: 12px
       font-size: 10px
   .background
@@ -234,12 +234,8 @@ export default {
     &.fade-leave-to
       opacity: 0;
     .detail-wrapper
-      overflow: auto
-      min-height: 100%;
+      min-height: 100%
       .detail-main
-        // 这里用 margin 没有出现预期的结果，是因为外边距重叠的原因
-        // 第一，使用 padding-top: 64px
-        // 第二，在 detail-wrapper 那里加上 overflow: auto
         margin-top: 64px
         // 这个是为下面的 × 留出来的位置
         padding-bottom: 128px
@@ -313,6 +309,7 @@ export default {
       position: relative
       width: 32px
       height: 32px
-      margin: -64px auto 0;
+      margin: -64px auto 0 auto;
+      clear: both
       font-size: 32px
 </style>
